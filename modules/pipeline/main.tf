@@ -9,6 +9,7 @@ resource "datadog_logs_custom_pipeline" "logs_custom_pipeline" {
             }
 
       }
+      
       dynamic "processor" {
             for_each = var.processors
             content {
